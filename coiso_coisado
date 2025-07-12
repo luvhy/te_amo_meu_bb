@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido Especial</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: "Segoe UI", sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #ff3399;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #cc0066;
+      margin-bottom: 40px;
+    }
+
+    button {
+      font-size: 1.5em;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #sim {
+      background-color: #33cc33;
+      color: white;
+    }
+
+    #nao {
+      background-color: #ff3300;
+      color: white;
+    }
+
+    #resposta {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #ff0000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Te amo meu neném</h1>
+  <h2>Casa comigo?</h2>
+
+  <div>
+    <button id="sim" onclick="respostaCerta()">Sim</button>
+    <button id="nao" onclick="respostaErrada()">Não</button>
+  </div>
+
+  <div id="resposta"></div>
+
+  <script>
+    function respostaCerta() {
+      document.getElementById("resposta").textContent = "rsrs";
+    }
+
+    function respostaErrada() {
+      document.getElementById("resposta").textContent = "pq vc aperto em não em yasmin?";
+    }
+  </script>
+
+</body>
+</html>
